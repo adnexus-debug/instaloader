@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: ig-reel-checker
+    schedule: "*/360 * * * *"  # every 6 hours (change as needed)
+    runtime: python
+    buildCommand: ""
+    startCommand: python reelslinkgrabber.py
